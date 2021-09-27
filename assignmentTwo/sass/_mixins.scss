@@ -1,0 +1,73 @@
+@mixin backgroundWhite(
+  $imagepath,
+  $repeat: no-repeat,
+  $position: center,
+  $cover: cover,
+  $attachment: fixed
+) {
+  background: {
+    image: linear-gradient(to right, $white70Alpha, $white70Alpha),
+      url($imagepath);
+    repeat: $repeat;
+    position: $position;
+    size: $cover;
+    attachment: $attachment;
+  }
+}
+
+@mixin backgroundImg(
+  $imagepath,
+  $repeat: no-repeat,
+  $position: center,
+  $cover: cover
+) {
+  background: {
+    image: url($imagepath);
+    repeat: $repeat;
+    position: $position;
+    size: $cover;
+  }
+}
+
+@mixin overlayWhite(
+  $imagepath,
+  $repeat: no-repeat,
+  $position: center,
+  $cover: cover
+) {
+  background: {
+    image: linear-gradient(to right, $white30Alpha, $white30Alpha),
+      url($imagepath);
+    repeat: $repeat;
+    position: $position;
+    size: $cover;
+  }
+}
+@mixin overlayOffWhite(
+  $imagepath,
+  $repeat: no-repeat,
+  $position: center,
+  $cover: cover
+) {
+  background: {
+    image: linear-gradient(to right, $offWhiteAlpha, $offWhiteAlpha),
+      url($imagepath);
+    repeat: $repeat;
+    position: $position;
+    size: $cover;
+  }
+}
+@mixin overlayProduct(
+  $imagepath,
+  $repeat: no-repeat,
+  $position: center,
+  $cover: cover
+) {
+  background: {
+    image: linear-gradient(to top right, $white30Alpha, $blackAlpha),
+      url($imagepath);
+    repeat: $repeat;
+    position: $position;
+    size: $cover;
+  }
+}

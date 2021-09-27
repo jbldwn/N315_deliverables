@@ -1,0 +1,21 @@
+{
+  "name": "assignmenttwo",
+  "version": "1.0.0",
+  "description": "assignmentTwo",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "live-server"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Jennifer Baldwin",
+  "license": "ISC"
+}

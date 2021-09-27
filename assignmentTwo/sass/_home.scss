@@ -1,0 +1,69 @@
+.home {
+  &-img {
+    height: 100vh;
+    width: 100%;
+    @include backgroundWhite("../images/heroHome.jpg");
+    .offer {
+      padding-top: 50px;
+      height: 100%;
+      // display: flex;
+      &-img {
+        @include overlayOffWhite("../images/heroSale.jpg");
+        height: inherit;
+      }
+      &-text {
+        text-align: center;
+        &-headerPlacement {
+          padding-top: 10%;
+        }
+        &-link {
+          display: flex;
+          justify-content: center;
+          &-btn {
+            margin-top: 3%;
+            background-color: $orangeBrColor;
+            border: none;
+            border-radius: 30px;
+            height: 100px;
+            width: 280px;
+          }
+        }
+      }
+    }
+  }
+  &-color {
+    min-height: calc(100vh - 120px);
+    width: 100%;
+    background-color: $offWhiteColor;
+    display: flex;
+
+    .promo {
+      margin: 50px 0px;
+      // height: 100%;
+      display: flex;
+      // align-content: center;
+      margin: auto;
+      justify-content: space-evenly;
+      // min-height: calc(100%-50px);
+
+      &-img {
+        @include overlayWhite("../images/fallThings.jpg");
+        width: 330px;
+        height: 450px;
+        border-radius: 30px;
+      }
+      &-text {
+        height: 400px;
+        width: 40%;
+
+        //spaces horizontally
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        //centers text in column
+        text-align: center;
+      }
+    }
+  }
+}

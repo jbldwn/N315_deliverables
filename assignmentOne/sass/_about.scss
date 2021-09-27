@@ -1,0 +1,67 @@
+.about {
+  background-color: $offWhiteColor;
+  &-img {
+    min-height: calc(100vh - 70px);
+    width: 100%;
+    @include backgroundWhite("../images/heroAbout.jpg");
+    padding-bottom: 25px;
+
+    .story {
+      &-header {
+        padding-top: 25px;
+      }
+      .origin {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 25px;
+        // background-color: purple;
+        &-img {
+          @include overlayOffWhite("../images/pumkinTruck.jpg");
+          width: 442px;
+          height: 462px;
+          border-radius: 30px;
+        }
+        &-text {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .team {
+    padding: 25px;
+    min-height: calc(100vh - 120px);
+    &-header {
+      padding-top: 25px;
+    }
+    .employee {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 25px;
+      &-img {
+        height: 280px;
+        width: 240px;
+        border-radius: 30px;
+      }
+      .employee1 {
+        @include overlayWhite("../images/founder.jpg");
+      }
+      .employee2 {
+        @include overlayWhite("../images/cofounder.jpg");
+      }
+      &-info {
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .nametag {
+          &-name {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

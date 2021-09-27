@@ -1,0 +1,73 @@
+nav {
+  // makes header sticky
+  position: fixed;
+  top: 0;
+  width: 100%;
+  //^^^
+
+  height: 50px;
+  background-color: $blackColor;
+
+  .navMargin {
+    height: 100%;
+    width: $siteWidth;
+    margin: 0 auto;
+
+    //navbutton spreading
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .links {
+      display: flex;
+      justify-content: space-evenly;
+
+      &--nav {
+        width: 30%;
+        justify-content: space-between;
+
+        a {
+          text-align: left;
+        }
+      }
+
+      &--account {
+        width: 10%;
+        justify-content: space-evenly;
+        span {
+          font-size: $tinyFontsz;
+          color: $orangeBrColor;
+          font-family: $paragraphFont;
+        }
+        a {
+          font-size: $tinyFontsz;
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+      color: $whiteColor;
+      text-align: right;
+      font-family: $paragraphFont;
+      font-size: $navFontsz;
+    }
+    .activeLink {
+      text-align: left;
+      font-family: $activeFont;
+      color: $orangeBrColor;
+      font-weight: bold;
+    }
+  }
+}
+@media all and (max-width: 1200px) {
+  nav {
+    .navMargin {
+      .links--nav {
+        width: 45%;
+      }
+      .links--account {
+        width: 20%;
+      }
+    }
+  }
+}

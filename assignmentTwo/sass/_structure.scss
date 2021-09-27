@@ -1,0 +1,106 @@
+@font-face {
+  font-family: seguibl;
+  src: url("fonts/seguibl.ttf");
+}
+@font-face {
+  font-family: segoeui;
+  src: url("fonts/segoeui.ttf");
+}
+@font-face {
+  font-family: COOPBL;
+  src: url("fonts/COOPBL.TTF");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: borderbox;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 14px;
+}
+a {
+  text-decoration: none;
+}
+.margin {
+  min-height: 100%;
+  width: $siteWidth;
+  margin: 0 auto;
+}
+.navBuff {
+  padding-top: 50px;
+}
+.header {
+  font-family: $headerFont;
+
+  &-size {
+    &XL {
+      font-size: $bigHeaderTitlesz;
+    }
+    &Lg {
+      font-size: $bigHeadersz;
+    }
+    &Md {
+      font-size: $smallHeadersz;
+    }
+    &Sm {
+      font-size: $subHeadersz;
+    }
+    &XS {
+      font-size: $tinySubHeadersz;
+    }
+  }
+}
+.paraText {
+  &_Reg {
+    font-family: $paragraphFont;
+  }
+  &_Bold {
+    font-family: $activeFont;
+  }
+  &-size {
+    &XL {
+      font-size: $largeFontsz;
+    }
+    &Lg {
+      font-size: $navFontsz;
+    }
+    &Md {
+      font-size: $paraFontsz;
+    }
+    &Sm {
+      font-size: $tinyFontsz;
+    }
+  }
+}
+.header,
+.paraText {
+  &-color {
+    &Blk {
+      color: $blackColor;
+    }
+    &OrgBr {
+      color: $orangeBrColor;
+    }
+    &OrgLt {
+      color: $orangeLtColor;
+    }
+  }
+  &-transform {
+    &UC {
+      text-transform: uppercase;
+    }
+    &Cap {
+      text-transform: capitalize;
+    }
+  }
+}
