@@ -136,7 +136,7 @@ var productsPageInfo = `<div class="products">
                 </div>
                   
             </div>
-            <div class="header header-colorBlk header-sizeSm header-transformCap ">curesd candle</div>
+            <div class="header header-colorBlk header-sizeSm header-transformCap ">cursed candle</div>
         </div>
         <div class="newProd">
             <div class="newProd-img prod5">

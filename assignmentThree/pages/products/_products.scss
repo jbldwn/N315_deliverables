@@ -1,0 +1,121 @@
+.products {
+  background-color: $offWhiteColor;
+  &-img {
+    min-height: calc(100vh - 70px);
+    width: 100%;
+    @include backgroundWhite("../images/heroProduct.jpg");
+    padding-bottom: 25px;
+    .featured {
+      padding: 25px;
+      .display {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 35px;
+        :nth-child(1n + 1) {
+          width: 250px;
+          height: 250px;
+          border-radius: 30px;
+        }
+        .category {
+          height: 400px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          &-img1 {
+            @include overlayOffWhite("../images/activities.jpg");
+          }
+          &-img2 {
+            @include overlayOffWhite("../images/flavors.jpg");
+          }
+          &-img3 {
+            @include overlayOffWhite("../images/sacrafices.jpg");
+          }
+          &-btn {
+            background-color: $orangeBrColor;
+            border: none;
+            border-radius: 30px;
+            height: 85px;
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+  .newInventory {
+    padding: 25px;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    &-header {
+      padding-top: 25px;
+      margin-bottom: 25px;
+      // font-family: $headerFont;
+      // font-size: $smallHeadersz;
+      // text-transform: capitalize;
+      // color: $blackColor;
+    }
+    &-display {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      :nth-child(1n + 1) {
+        width: 250px;
+        height: 250px;
+        border-radius: 30px;
+      }
+      .newProd {
+        height: 350px;
+        width: 325px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .newProd-img {
+          min-height: 250px;
+          width: 250px;
+          margin-bottom: 30px;
+
+          .banner {
+            border-radius: 0px;
+            height: 75px;
+            width: 63px;
+            display: flex;
+            float: right;
+            margin-right: 30px;
+            @include backgroundImg("../images/priceBanner.png");
+
+            &-price {
+              text-align: center;
+              // font-family: $headerFont;
+              // font-size: $subHeadersz;
+              // color: $orangeBrColor;
+            }
+          }
+        }
+
+        .prod1 {
+          @include overlayProduct("../images/gourd.jpg");
+        }
+        .prod2 {
+          @include overlayProduct("../images/mushroom.jpg");
+        }
+        .prod3 {
+          @include overlayProduct("../images/bones.jpg");
+        }
+        .prod4 {
+          @include overlayProduct("../images/cursedCandle.jpg");
+        }
+        .prod5 {
+          @include overlayProduct("../images/heroProduct.jpg");
+        }
+        .prod6 {
+          @include overlayProduct("../images/fallThings.jpg");
+        }
+      }
+    }
+  }
+}

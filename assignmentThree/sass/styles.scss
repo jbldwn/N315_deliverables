@@ -1,0 +1,11 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_structure.scss";
+
+@import "../pages/partials/_nav.scss";
+@import "../pages/partials_footer.scss";
+
+@import "../pages/home/_home.scss";
+@import "../pages/about/_about.scss";
+@import "../pages/products/_products.scss";
+@import "../pages/contact/_contact.scss";

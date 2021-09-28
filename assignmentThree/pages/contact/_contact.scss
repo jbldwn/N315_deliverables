@@ -1,0 +1,117 @@
+.contact {
+  background-color: $offWhiteColor;
+  &-img {
+    min-height: calc(100vh - 70px);
+    width: 100%;
+    @include backgroundWhite("../images/heroContact.jpg");
+    padding-bottom: 25px;
+    .featured {
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      &-header {
+        width: 100%;
+      }
+      &-info {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        .address {
+          width: 600px;
+        }
+        .hemisphere {
+          height: 50%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          &-header {
+            width: 100%;
+          }
+          &-subheader {
+            width: 35%;
+            text-align: right;
+          }
+          &-info {
+            width: 60%;
+          }
+        }
+        &-photo {
+          @include overlayOffWhite("../images/Offices.jpg");
+          width: 285px;
+          height: 394px;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+  .contactNow {
+    &-header {
+      margin: 25px 0;
+    }
+    &-box {
+      display: flex;
+      justify-content: space-around;
+      padding: 25px 0 50px 0;
+
+      .map {
+        width: 35%;
+        @include overlayWhite("../images/maps.jpg");
+        width: 320px;
+        height: 450px;
+        border-radius: 30px;
+      }
+      .message {
+        width: 50%;
+
+        form {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          //   align-items: center;
+          //   align-content: center;
+
+          padding: 0 30px;
+          height: 418px;
+          input[type="text"],
+          select,
+          textarea {
+            width: 100%;
+            padding: 12px;
+            border: 5px solid $orangeLtColor;
+            border-radius: 30px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical; /* Allow the user to vertically resize the textarea */
+            background-color: $orangeLtAlpha;
+          }
+          label {
+            font-family: $headerFont;
+            font-size: $navFontsz;
+            color: $orangeBrColor;
+            text-transform: capitalize;
+          }
+          input[type="submit"] {
+            // margin: 0 auto;
+            background-color: $orangeBrColor;
+            color: $orangeLtColor;
+            font-family: $activeFont;
+            font-size: $navFontsz;
+            padding-bottom: 3px;
+            width: 118px;
+            height: 40px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-bottom: 0px;
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+}

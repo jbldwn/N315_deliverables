@@ -1,0 +1,49 @@
+footer {
+  background-color: $blackColor;
+  height: 70px;
+  width: 100%;
+  //   text-align: center;
+  //   display: flex;
+  // align-items: center;
+  .footer {
+    //center horizontal and spacing
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    justify-content: space-between;
+
+    &-text {
+      &-name {
+        color: $orangeBrColor;
+        font-family: $headerFont;
+        font-size: $subHeadersz;
+      }
+      &-copy {
+        color: $whiteColor;
+        font-family: $paragraphFont;
+      }
+    }
+    &-socials {
+      width: 10%;
+      display: flex;
+      justify-content: space-between;
+      &-tw {
+        @include backgroundImg("../images/twitterWHT.png");
+      }
+      &-fb {
+        @include backgroundImg("../images/facebookWHT.png");
+      }
+      &-insta {
+        @include backgroundImg("../images/instagramWHT.png");
+      }
+
+      //sizes all children
+      :nth-child(1n + 1) {
+        // background-color: purple;
+        height: 25px;
+        width: 25px;
+      }
+    }
+  }
+}
