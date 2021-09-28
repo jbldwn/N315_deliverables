@@ -229,23 +229,17 @@ var _productsPageInfo = `<div class="products">
     
 
     var _getMyVariable = function (buttonID, callback) {
-        // console.log("model.js 6 " + buttonID);
+        
         let newName = "_" + buttonID + "PageInfo";
         $("#content").html(eval(newName));
-        // if(buttonID == "home"){
-        //     $("#content").html(_homePageInfo);
-        // } else {
-        //     $("#content").html(_aboutPageInfo);
-        // }
+        
         if (callback) {
             callback(newName);
         }
         
-        // return _myVar;
     };
 
     return {
-        // getmyvariable is only public class
         getMyVariable: _getMyVariable,
     };
 })();

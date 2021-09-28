@@ -225,11 +225,9 @@ var productsPageInfo = `<div class="products">
 </div>`;
 
 var _getNavVar = function(navID){
-    // console.log(navID);
-
+    //retrieve content
     let pageInfo = `${navID}PageInfo`;
     $('#content').html(eval(pageInfo));  
-    console.log(pageInfo);
 };
 return{
     getNavVar: _getNavVar, 
