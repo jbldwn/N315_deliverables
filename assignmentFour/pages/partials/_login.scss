@@ -1,0 +1,27 @@
+.login {
+  /* display: none; */
+  //   position: fixed;
+  //   top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: $purple85Alpha;
+  justify-content: center;
+  /* animation: fadein 3s;
+    animation-timing-function: ease-in-out; */
+  .inactive {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $purple85Alpha;
+  }
+  .callout {
+    position: relative;
+    z-index: 99;
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+  }
+}

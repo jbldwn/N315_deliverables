@@ -1,0 +1,29 @@
+@mixin backgroundPurple(
+  $imagepath,
+  $repeat: no-repeat,
+  $position: center,
+  $cover: cover,
+  $attachment: fixed
+) {
+  background: {
+    image: linear-gradient(to bottom, $gray70Alpha, $purple80Alpha),
+      url($imagepath);
+    repeat: $repeat;
+    position: $position;
+    size: $cover;
+    attachment: $attachment;
+  }
+}
+@mixin overlayGray(
+  $imagepath,
+  $repeat: no-repeat,
+  $position: center,
+  $cover: cover
+) {
+  background: {
+    image: linear-gradient(to right, $grayAlpha, $grayAlpha), url($imagepath);
+    repeat: $repeat;
+    position: $position;
+    size: $cover;
+  }
+}

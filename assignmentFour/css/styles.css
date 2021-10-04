@@ -1,0 +1,287 @@
+@font-face {
+  font-family: BebasNeue;
+  src: url("../css/fonts/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: Sitka;
+  src: url("../css/fonts/Mermaid1001.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: borderbox;
+          box-sizing: borderbox;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+.margin {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.txt_header {
+  font-family: Sitka;
+}
+.txt_paragraph {
+  font-family: BebasNeue;
+  letter-spacing: 2px;
+}
+.txt-colorWht {
+  color: #eeeeee;
+}
+.txt-colorBlk {
+  color: #000500;
+}
+.txt-colorPrpl {
+  color: #5f0f40;
+}
+.txt-colorOrg {
+  color: #ea9232;
+}
+.txt-sizeXL {
+  font-size: 80px;
+}
+.txt-sizeL {
+  font-size: 60px;
+}
+.txt-sizeM {
+  font-size: 40px;
+}
+.txt-sizeNv {
+  font-size: 25px;
+}
+.txt-sizeXS {
+  font-size: 18px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #eeeeee;
+}
+nav .navBar {
+  background-color: #000500;
+}
+nav .navBar-LG {
+  height: 60px;
+}
+nav .navBar-MD {
+  height: 16px;
+}
+nav .navBar-SM {
+  height: 8px;
+}
+nav .navIdentifier {
+  margin-top: -63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .navIdentifier .logo {
+  width: 250px;
+  text-align: right;
+  text-decoration: none;
+}
+nav .navIdentifier > * {
+  margin-bottom: -15px;
+}
+nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 0;
+}
+nav .nav a {
+  text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  height: 50px;
+  background-color: #000500;
+}
+footer div {
+  padding-top: 7px;
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer div .logo {
+  margin-top: 10px;
+  text-align: left;
+  text-decoration: none;
+}
+footer div p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.home {
+  max-height: 100vh;
+  margin-top: 165px;
+}
+.home .hero {
+  margin-top: -44px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(127, 123, 130, 0.7)), to(rgba(95, 15, 64, 0.8))), url("../images/heroHome.jpg");
+  background-image: linear-gradient(to bottom, rgba(127, 123, 130, 0.7), rgba(95, 15, 64, 0.8)), url("../images/heroHome.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 300px;
+  padding: 30px;
+}
+.home .hero .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home .hero .content > * {
+  padding: 20px 10px;
+}
+
+.about {
+  max-height: 100vh;
+  margin-top: 165px;
+}
+.about .hero {
+  margin-top: -44px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(127, 123, 130, 0.7)), to(rgba(95, 15, 64, 0.8))), url("../images/heroAbout.jpg");
+  background-image: linear-gradient(to bottom, rgba(127, 123, 130, 0.7), rgba(95, 15, 64, 0.8)), url("../images/heroAbout.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 300px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+.about .hero .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.about .hero .content > * {
+  padding: 20px 10px;
+}
+.about .hero .content p {
+  width: 40%;
+}
+.about .hero .content .collage {
+  width: 288px;
+}
+.about .hero .content .collage .top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+.about .hero .content .collage .top .left {
+  width: 138px;
+  height: 165px;
+  margin-right: 5px;
+}
+.about .hero .content .collage .top .left1 {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(127, 123, 130, 0.3)), to(rgba(127, 123, 130, 0.3))), url("../images/collage1.1.jpg");
+  background-image: linear-gradient(to right, rgba(127, 123, 130, 0.3), rgba(127, 123, 130, 0.3)), url("../images/collage1.1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about .hero .content .collage .top .left2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(127, 123, 130, 0.3)), to(rgba(127, 123, 130, 0.3))), url("../images/collage2.1.jpg");
+  background-image: linear-gradient(to right, rgba(127, 123, 130, 0.3), rgba(127, 123, 130, 0.3)), url("../images/collage2.1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about .hero .content .collage .top .right {
+  width: 138px;
+  height: 165px;
+  margin-left: 5px;
+}
+.about .hero .content .collage .top .right1 {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(127, 123, 130, 0.3)), to(rgba(127, 123, 130, 0.3))), url("../images/collage1.2.jpg");
+  background-image: linear-gradient(to right, rgba(127, 123, 130, 0.3), rgba(127, 123, 130, 0.3)), url("../images/collage1.2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about .hero .content .collage .top .right2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(127, 123, 130, 0.3)), to(rgba(127, 123, 130, 0.3))), url("../images/collage2.2.jpg");
+  background-image: linear-gradient(to right, rgba(127, 123, 130, 0.3), rgba(127, 123, 130, 0.3)), url("../images/collage2.2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about .hero .content .collage .bottom {
+  width: 288px;
+  height: 189px;
+  margin-bottom: 10px;
+}
+.about .hero .content .collage .bottom1 {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(127, 123, 130, 0.3)), to(rgba(127, 123, 130, 0.3))), url("../images/collage1.3.jpg");
+  background-image: linear-gradient(to right, rgba(127, 123, 130, 0.3), rgba(127, 123, 130, 0.3)), url("../images/collage1.3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about .hero .content .collage .bottom2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(127, 123, 130, 0.3)), to(rgba(127, 123, 130, 0.3))), url("../images/collage2.3.jpg");
+  background-image: linear-gradient(to right, rgba(127, 123, 130, 0.3), rgba(127, 123, 130, 0.3)), url("../images/collage2.3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/*# sourceMappingURL=styles.css.map */

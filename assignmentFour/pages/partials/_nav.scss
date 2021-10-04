@@ -1,0 +1,42 @@
+nav {
+  // makes header sticky
+  position: fixed;
+  top: 0;
+  width: 100%;
+  //^^^
+  background-color: $whiteColor;
+  .navBar {
+    background-color: $blackColor;
+    &-LG {
+      height: 60px;
+    }
+    &-MD {
+      height: 16px;
+    }
+    &-SM {
+      height: 8px;
+    }
+  }
+  .navIdentifier {
+    margin-top: -63px;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      width: 250px;
+      text-align: right;
+      text-decoration: none;
+    }
+    > * {
+      margin-bottom: -15px;
+    }
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    a {
+      text-decoration: none;
+    }
+  }
+}

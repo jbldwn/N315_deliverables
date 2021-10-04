@@ -1,0 +1,75 @@
+@font-face {
+  font-family: BebasNeue;
+  src: url("../css/fonts/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: Sitka;
+  src: url("../css/fonts/Mermaid1001.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: borderbox;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+body {
+  background-color: $whiteColor;
+}
+.margin {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.txt {
+  &_header {
+    font-family: Sitka;
+  }
+  &_paragraph {
+    font-family: BebasNeue;
+    letter-spacing: 2px;
+  }
+  &-color {
+    &Wht {
+      color: $whiteColor;
+    }
+    &Blk {
+      color: $blackColor;
+    }
+    &Prpl {
+      color: $purpleColor;
+    }
+    &Org {
+      color: $orangeColor;
+    }
+  }
+  &-size {
+    &XL {
+      font-size: $pageHeaderSZ;
+    }
+    &L {
+      font-size: $sectionHeaderSZ;
+    }
+    &M {
+      font-size: $sectionSubHeaderSZ;
+    }
+    &Nv {
+      font-size: $navSZ;
+    }
+    &XS {
+      font-size: $paragraphSZ;
+    }
+  }
+}
