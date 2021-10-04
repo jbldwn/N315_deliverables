@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: borderbox;
+  // border: 1px red solid;
 }
 html,
 body {
@@ -26,6 +27,7 @@ p {
   margin-bottom: 16px;
 }
 body {
+  min-height: 100vh;
   background-color: $whiteColor;
 }
 .margin {
@@ -44,6 +46,9 @@ body {
   &-color {
     &Wht {
       color: $whiteColor;
+    }
+    &Gry {
+      color: $grayColor;
     }
     &Blk {
       color: $blackColor;
@@ -70,6 +75,9 @@ body {
     }
     &XS {
       font-size: $paragraphSZ;
+    }
+    &Tiny {
+      font-size: $tinySZ;
     }
   }
 }

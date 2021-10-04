@@ -2,7 +2,9 @@
 @import "_mixins.scss";
 @import "_structure.scss";
 
+@import "../pages/partials/_login.scss";
 @import "../pages/partials/_nav.scss";
 @import "../pages/partials/_footer.scss";
+
 @import "../pages/home/_home.scss";
 @import "../pages/about/_about.scss";

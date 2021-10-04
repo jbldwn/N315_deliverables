@@ -1,6 +1,7 @@
 .about {
   max-height: 100vh;
   margin-top: 165px;
+  margin-bottom: 50px;
   .hero {
     margin-top: -44px;
     @include backgroundPurple("../images/heroAbout.jpg");
@@ -15,7 +16,7 @@
         padding: 20px 10px;
       }
       p {
-        width: 40%;
+        width: 55%;
       }
       .collage {
         width: 288px;
