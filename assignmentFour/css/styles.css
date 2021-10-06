@@ -29,8 +29,11 @@ p {
 }
 
 body {
-  min-height: 100vh;
   background-color: #eeeeee;
+}
+
+#display {
+  padding-bottom: 30px;
 }
 
 .margin {
@@ -314,7 +317,6 @@ footer div p {
 }
 
 .home {
-  max-height: 100vh;
   margin-top: 165px;
 }
 .home .hero {
@@ -325,7 +327,6 @@ footer div p {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 300px;
   padding: 30px;
 }
 .home .hero .content {
@@ -343,7 +344,6 @@ footer div p {
 .about {
   max-height: 100vh;
   margin-top: 165px;
-  margin-bottom: 50px;
 }
 .about .hero {
   margin-top: -44px;
@@ -366,76 +366,75 @@ footer div p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.about .hero .content > * {
-  padding: 20px 10px;
-}
 .about .hero .content p {
   width: 55%;
+  padding: 10 30px;
 }
 .about .hero .content .collage {
-  width: 288px;
+  width: 40%;
 }
-.about .hero .content .collage .top {
+.about .hero .content .collage .photos {
+  margin: 0 auto;
+  width: 190px;
+}
+.about .hero .content .collage .photos .top {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 10px;
 }
-.about .hero .content .collage .top .left {
-  width: 138px;
-  height: 165px;
+.about .hero .content .collage .photos .top .left {
+  width: 91px;
+  height: 109px;
   margin-right: 5px;
 }
-.about .hero .content .collage .top .left1 {
+.about .hero .content .collage .photos .top .left1 {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(127, 123, 130, 0.3)), to(rgba(127, 123, 130, 0.3))), url("../images/collage1.1.jpg");
   background-image: linear-gradient(to right, rgba(127, 123, 130, 0.3), rgba(127, 123, 130, 0.3)), url("../images/collage1.1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.about .hero .content .collage .top .left2 {
+.about .hero .content .collage .photos .top .left2 {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(127, 123, 130, 0.3)), to(rgba(127, 123, 130, 0.3))), url("../images/collage2.1.jpg");
   background-image: linear-gradient(to right, rgba(127, 123, 130, 0.3), rgba(127, 123, 130, 0.3)), url("../images/collage2.1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.about .hero .content .collage .top .right {
-  width: 138px;
-  height: 165px;
+.about .hero .content .collage .photos .top .right {
+  width: 91px;
+  height: 109px;
   margin-left: 5px;
 }
-.about .hero .content .collage .top .right1 {
+.about .hero .content .collage .photos .top .right1 {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(127, 123, 130, 0.3)), to(rgba(127, 123, 130, 0.3))), url("../images/collage1.2.jpg");
   background-image: linear-gradient(to right, rgba(127, 123, 130, 0.3), rgba(127, 123, 130, 0.3)), url("../images/collage1.2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.about .hero .content .collage .top .right2 {
+.about .hero .content .collage .photos .top .right2 {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(127, 123, 130, 0.3)), to(rgba(127, 123, 130, 0.3))), url("../images/collage2.2.jpg");
   background-image: linear-gradient(to right, rgba(127, 123, 130, 0.3), rgba(127, 123, 130, 0.3)), url("../images/collage2.2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.about .hero .content .collage .bottom {
-  width: 288px;
-  height: 189px;
+.about .hero .content .collage .photos .bottom {
+  width: 190px;
+  height: 125px;
   margin-bottom: 10px;
 }
-.about .hero .content .collage .bottom1 {
+.about .hero .content .collage .photos .bottom1 {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(127, 123, 130, 0.3)), to(rgba(127, 123, 130, 0.3))), url("../images/collage1.3.jpg");
   background-image: linear-gradient(to right, rgba(127, 123, 130, 0.3), rgba(127, 123, 130, 0.3)), url("../images/collage1.3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.about .hero .content .collage .bottom2 {
+.about .hero .content .collage .photos .bottom2 {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(127, 123, 130, 0.3)), to(rgba(127, 123, 130, 0.3))), url("../images/collage2.3.jpg");
   background-image: linear-gradient(to right, rgba(127, 123, 130, 0.3), rgba(127, 123, 130, 0.3)), url("../images/collage2.3.jpg");
   background-repeat: no-repeat;

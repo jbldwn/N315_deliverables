@@ -16,20 +16,23 @@
         <div class="content">
             <p class="txt-sizeXS">Existence planets brain, spiritual frequency time constellation relations sun human time. Intelligence time earth wellbeing mercury stellar pleiades spatial spirituality. Electromagnetic brain solar gaia emotional sirius spiritual, mercury magic spectrum light formation matrix. Mind galactic brain heal cognitive positive experience technology.  Intelligence time earth wellbeing mercury stellar pleiades spatial spirituality. Electromagnetic brain solar gaia emotional sirius spiritual, mercury magic spectrum light formation matrix. Heart materialist concepts electromagnetic star matrix emotional good, jupiter geometry spirit galactic.  Heart materialist concepts electromagnetic star matrix emotional good, jupiter geometry spirit galactic. </p>
             <div class="collage">
-                <div class="top">
-                    <div class="left left1"></div>
-                    <div class="right right1"></div>
+                    <div class="photos">
+                        <div class="top">
+                            <div class="left left1"></div>
+                            <div class="right right1"></div>
+                        </div>
+                        <div class="bottom bottom1"></div>
+                    </div>
                 </div>
-                <div class="bottom bottom1"></div>
-            </div>
-            <div class="collage">
-                <div class="bottom bottom2"></div>
-
-                <div class="top">
-                    <div class="left left2"></div>
-                    <div class="right right2"></div>
+                <div class="collage">
+                    <div class="photos">
+                        <div class="bottom bottom2"></div>
+                        <div class="top">
+                            <div class="left left2"></div>
+                            <div class="right right2"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
             <p class="txt-sizeXS">Mind galactic brain heal cognitive positive experience technology. Spacetime solar concepts relativity century galaxies emotional solar consciousness. Wavelength philosophical atoms gaia physics emotional constellation galactic flow. Intelligence time earth wellbeing mercury stellar pleiades spatial spirituality. Heart materialist concepts electromagnetic star matrix emotional good, jupiter geometry spirit galactic. Electromagnetic brain solar gaia emotional sirius spiritual, mercury magic spectrum light formation matrix. Heart materialist concepts electromagnetic star matrix emotional good, jupiter geometry spirit galactic.</p>
             
         </div>

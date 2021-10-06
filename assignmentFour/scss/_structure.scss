@@ -27,8 +27,11 @@ p {
   margin-bottom: 16px;
 }
 body {
-  min-height: 100vh;
+  // min-height: 100vh;
   background-color: $whiteColor;
+}
+#display {
+  padding-bottom: 30px;
 }
 .margin {
   width: 80%;

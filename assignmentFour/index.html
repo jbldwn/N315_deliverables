@@ -46,9 +46,9 @@
     
     <footer>
         <div class="margin txt-colorWht">
-            <a href="index.html" class="logo txt-colorWht txt-sizeNv">
+            <div href="index.html" class="logo txt-colorWht txt-sizeNv">
                 <h1 class="txt_paragraph "><span class="txt_header">Be</span>W<span  class="txt_header">*</span>TCHED</h1>
-            </a>
+            </div>
             <p>All rights reserved. &copy; 2021</p>
         </div>
     </footer>
@@ -67,22 +67,24 @@
                     <div class="login">
                         <h4 class="greeting txt_paragraph txt-colorBlk">Welcome Back</h4>
                         <form action="login">
-                            <input type="text" id="email" name="email" placeholder="username or email">
+                            <input type="text" id="login-name" name="email" placeholder="username or email">
 
                             <input type="text" id="password" name="password" placeholder="password">
-                            <input class="button" type="submit" value="Login">
+                            <input
+                            id="loginBtn" class="button" type="submit" value="Login">
                         </form>
                     </div>
 
                     <form class="signUp">
                         <div class="name">
-                            <input type="text" id="fname" name="fname" placeholder="first name">
-                            <input type="text" id="lname" name="lname" placeholder="last name">
+                            <input type="text" id="signup-fname" name="fname" placeholder="first name">
+                            <input type="text" name="lname" placeholder="last name">
                         </div>
                         <input type="text" id="email" name="email" placeholder="username or email">
-                        <input type="text" id="password" name="password" placeholder="password">
-                        <input type="text" id="password" name="password" placeholder="retype password">
-                        <input class="button" type="submit" value="Sign Up">
+                        <input type="text" name="password" placeholder="password">
+                        <input type="text" name="password" placeholder="retype password">
+                        <input 
+                        id="signUpBtn" class="button" type="submit" value="Sign Up">
                     </form>
                 </div>
                 <div class="oops ">

@@ -29,7 +29,7 @@ function initListeners(){
     $("#submit").click(function(e){
         e.preventDefault();
 
-        let text = $("#login-text").val();
+        let text = $("#login-name").val();
         gsap.to($(".loginBox"), { 
             scale: 0, 
             duration: 0, 

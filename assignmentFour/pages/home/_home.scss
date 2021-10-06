@@ -1,10 +1,10 @@
 .home {
-  max-height: 100vh;
+  // max-height: 100vh;
   margin-top: 165px;
   .hero {
     margin-top: -44px;
     @include backgroundPurple("../images/heroHome.jpg");
-    min-height: 300px;
+    // min-height: 300px;
     padding: 30px;
     .content {
       display: flex;
