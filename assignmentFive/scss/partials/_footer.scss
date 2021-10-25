@@ -1,0 +1,124 @@
+footer {
+  margin-top: -115px;
+  width: 100%;
+  display: flex;
+  .footer {
+    margin: 40px 50px;
+    width: calc(100% - 100px);
+    // position: fixed;
+    display: flex;
+    justify-content: space-between;
+    &-copy {
+      width: 35%;
+    }
+    &-nav {
+      width: 50%;
+      a {
+        text-decoration: none;
+        margin-right: 15px;
+      }
+    }
+    &-socials {
+      width: 8%;
+      display: flex;
+      justify-content: space-between;
+      .facebook {
+        height: 19px;
+        width: 19px;
+        background-image: url("../images/facebook.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .insta {
+        height: 19px;
+        width: 19px;
+        background-image: url("../images/instagram.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      a {
+        text-decoration: none;
+        margin-right: 15px;
+      }
+    }
+  }
+  .footerPhone {
+    display: none;
+  }
+}
+@media screen and (max-width: 793px) {
+  footer {
+    margin-top: -80px;
+
+    .footer {
+      margin: 30px 20px;
+      width: calc(100% - 40px);
+
+      &-copy {
+        width: 35%;
+      }
+      &-nav {
+        width: 50%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  footer {
+    margin-top: -65px;
+    .footer {
+      display: none;
+    }
+    .footerPhone {
+      margin: 30px 20px;
+      width: calc(100% - 40px);
+
+      //   position: fixed;
+      display: flex;
+
+      flex-wrap: wrap;
+      .top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        .footer-copy {
+          width: 70%;
+        }
+        .footer-socials {
+          width: 20%;
+          display: flex;
+          justify-content: space-between;
+          .facebook {
+            height: 19px;
+            width: 19px;
+            background-image: url("../images/facebook.svg");
+          }
+          .insta {
+            height: 19px;
+            width: 19px;
+            background-image: url("../images/instagram.svg");
+          }
+        }
+      }
+      .bottom {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        .footer-nav {
+          height: 50px;
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

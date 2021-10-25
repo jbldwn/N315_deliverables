@@ -1,0 +1,94 @@
+.home {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to right,
+      $StrawberryAlpha,
+      $StrawberryAlpha
+    ),
+    url("../images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .circle-holder {
+    // margin-top: 50px;
+
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .little-circle {
+      position: absolute;
+      width: 167px;
+      height: 167px;
+      background-color: $PeachColor;
+      border-radius: 100px;
+      margin-left: 350px;
+      margin-top: -250px;
+      z-index: 20;
+      box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.16);
+
+      //align content
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .sidekick {
+        margin: 0 auto;
+        text-align: center;
+        width: 78px;
+        text-align: justify;
+      }
+    }
+    .big-circle {
+      width: 357px;
+      height: 357px;
+      background-color: $LemonColor;
+      border-radius: 200px;
+      z-index: 21;
+
+      box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.16);
+
+      //align content
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .hero-wrapper {
+        margin: 0 auto;
+        text-align: center;
+        width: 164px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 793px) {
+  .home {
+    .circle-holder {
+      .little-circle {
+        margin-left: 230px;
+        margin-top: -350px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .home {
+    min-height: 120vh;
+    .circle-holder {
+      .little-circle {
+        margin-left: 200px;
+        margin-top: -350px;
+        .sidekick {
+          text-align: center;
+          width: 77px;
+        }
+      }
+    }
+  }
+}
