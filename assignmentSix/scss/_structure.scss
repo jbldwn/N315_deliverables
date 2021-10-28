@@ -1,0 +1,129 @@
+@font-face {
+  font-family: Caveat_Bld;
+  src: url("../css/fonts/Caveat-Bold.ttf");
+}
+@font-face {
+  font-family: Caveat;
+  src: url("../css/fonts/Caveat-Regular.ttf");
+}
+@font-face {
+  font-family: Gill_Lt;
+  src: url("../css/fonts/GillSans-Light.ttf");
+}
+@font-face {
+  font-family: Gill_Rg;
+  src: url("../css/fonts/GillSans.ttf");
+}
+@font-face {
+  font-family: Gill_It;
+  src: url("../css/fonts/GillSans-Italic.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: borderbox;
+  // border: red solid 1px;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+body {
+  position: relative;
+  // margin: 0;
+  // padding-bottom: 4rem;
+  // min-height: 100vh;
+}
+.app {
+  min-height: 100%;
+}
+.txt {
+  &_Header {
+    &Bld {
+      font-family: $HeaderBld;
+      text-transform: capitalize;
+    }
+    &Rg {
+      font-family: $HeaderRg;
+      text-transform: capitalize;
+    }
+  }
+  &_Para {
+    &Lt {
+      font-family: $ParaLt;
+    }
+    &Rg {
+      font-family: $ParaRg;
+    }
+    &It {
+      font-family: $ParaIt;
+    }
+  }
+  &-size {
+    &HdrXL {
+      font-size: 30px;
+      text-transform: capitalize;
+    }
+    &Hdr {
+      font-size: 25px;
+    }
+    &Parg {
+      &XL {
+        font-size: 15px;
+        text-transform: capitalize;
+      }
+      &Lg {
+        font-size: 13px;
+      }
+      &Md {
+        font-size: 10px;
+      }
+    }
+  }
+  &-color {
+    &Blk {
+      color: $BlackColor;
+    }
+  }
+}
+
+.btn {
+  &_Med {
+    height: 52px;
+    width: 158px;
+    border-radius: 26px;
+
+    //center text
+    display: flex;
+    * {
+      margin: auto;
+    }
+  }
+  &_fullWidth {
+    height: 52px;
+    width: 100%;
+    border-radius: 26px;
+
+    //center text
+    display: flex;
+    * {
+      margin: auto;
+    }
+  }
+  &-ylw {
+    background-color: $LemonColor;
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.16);
+  }
+}

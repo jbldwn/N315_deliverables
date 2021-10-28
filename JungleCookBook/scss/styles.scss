@@ -1,0 +1,11 @@
+//inits
+@import "partials/_variables.scss";
+@import "_structure.scss";
+
+// nav and footer
+@import "partials/_nav.scss";
+@import "partials/_footer.scss";
+
+// pages
+@import "home/_home.scss";
+@import "login/_login.scss";
